@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<header>
+			<a href="#" class="logo">logo</a>
+			<ul>
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="#">about</a></li>
+				<li><a href="#">Work</a></li>
+				<li><a href="#">Contains</a></li>
+			</ul>
+		</header>
+		<section>
+			<img src="./assets/icons/stars.png" id="stars" alt="" />
+			<img src="./assets/icons/moon.png" id="moon" alt="" />
+			<img
+				src="./assets/icons/mountains_behind.png"
+				id="mountains_behind"
+				alt=""
+			/>
+			<h2 id="text">Wepro/Madad</h2>
+			<a href="#sec" id="btn">Explore</a>
+			<img
+				src="./assets/icons/mountains_front.png"
+				id="mountains_front"
+				alt=""
+			/>
+		</section>
+		<div class="sec" id="sec">
+			<h2>Хочешь так же? делай так же</h2>
+			<div class="box">
+				<div class="text1"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus inventore ducimus facilis. Et quisquam adipisci eum ipsum voluptatum quod eveniet quas aspernatur, magnam sunt. Necessitatibus totam quia voluptates nobis amet quo, facere ad blanditiis recusandae itaque quos saepe consequuntur, quis soluta exercitationem explicabo sint magnam dolorem doloribus ut enim neque impedit debitis! A ex officiis eaque tempora at saepe. Rem debitis consectetur a consequatur temporibus nemo nam iure incidunt explicabo mollitia, recusandae officiis provident, repellat tempore repudiandae itaque laudantium voluptates dignissimos. Ex aperiam, provident incidunt error iusto eos itaque, minus optio dolorum, commodi fugiat officiis? Earum consectetur perferendis voluptate necessitatibus?</p></div>
+				<div class="text2"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus inventore ducimus facilis. Et quisquam adipisci eum ipsum voluptatum quod eveniet quas aspernatur, magnam sunt. Necessitatibus totam quia voluptates nobis amet quo, facere ad blanditiis recusandae itaque quos saepe consequuntur, quis soluta exercitationem explicabo sint magnam dolorem doloribus ut enim neque impedit debitis! A ex officiis eaque tempora at saepe. Rem debitis consectetur a consequatur temporibus nemo nam iure incidunt explicabo mollitia, recusandae officiis provident, repellat tempore repudiandae itaque laudantium voluptates dignissimos. Ex aperiam, provident incidunt error iusto eos itaque, minus optio dolorum, commodi fugiat officiis? Earum consectetur perferendis voluptate necessitatibus?</p></div>
+				<div class="text3"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus inventore ducimus facilis. Et quisquam adipisci eum ipsum voluptatum quod eveniet quas aspernatur, magnam sunt. Necessitatibus totam quia voluptates nobis amet quo, facere ad blanditiis recusandae itaque quos saepe consequuntur, quis soluta exercitationem explicabo sint magnam dolorem doloribus ut enim neque impedit debitis! A ex officiis eaque tempora at saepe. Rem debitis consectetur a consequatur temporibus nemo nam iure incidunt explicabo mollitia, recusandae officiis provident, repellat tempore repudiandae itaque laudantium voluptates dignissimos. Ex aperiam, provident incidunt error iusto eos itaque, minus optio dolorum, commodi fugiat officiis? Earum consectetur perferendis voluptate necessitatibus?</p></div>
+				<div class="text4"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus inventore ducimus facilis. Et quisquam adipisci eum ipsum voluptatum quod eveniet quas aspernatur, magnam sunt. Necessitatibus totam quia voluptates nobis amet quo, facere ad blanditiis recusandae itaque quos saepe consequuntur, quis soluta exercitationem explicabo sint magnam dolorem doloribus ut enim neque impedit debitis! A ex officiis eaque tempora at saepe. Rem debitis consectetur a consequatur temporibus nemo nam iure incidunt explicabo mollitia, recusandae officiis provident, repellat tempore repudiandae itaque laudantium voluptates dignissimos. Ex aperiam, provident incidunt error iusto eos itaque, minus optio dolorum, commodi fugiat officiis? Earum consectetur perferendis voluptate necessitatibus?</p></div>
+				<div class="text5"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus inventore ducimus facilis. Et quisquam adipisci eum ipsum voluptatum quod eveniet quas aspernatur, magnam sunt. Necessitatibus totam quia voluptates nobis amet quo, facere ad blanditiis recusandae itaque quos saepe consequuntur, quis soluta exercitationem explicabo sint magnam dolorem doloribus ut enim neque impedit debitis! A ex officiis eaque tempora at saepe. Rem debitis consectetur a consequatur temporibus nemo nam iure incidunt explicabo mollitia, recusandae officiis provident, repellat tempore repudiandae itaque laudantium voluptates dignissimos. Ex aperiam, provident incidunt error iusto eos itaque, minus optio dolorum, commodi fugiat officiis? Earum consectetur perferendis voluptate necessitatibus?</p></div>
+			</div>
+		</div>
+        <script>
+            let stars = document.querySelector('#stars')
+            let moon = document.querySelector('#moon')
+            let mountains_behind = document.querySelector('#mountains_behind')
+            let text = document.querySelector('#text')
+            let btn = document.querySelector('#btn')
+            let mountains_front = document.querySelector('#mountains_front')
+            let header = document.querySelector('header')
+            let text2 = document.querySelector('.text2')
+            let text1 = document.querySelector('.text1')
+            let text3 = document.querySelector('.text3')
+            let text4 = document.querySelector('.text4')
+            let text5 = document.querySelector('.text5')
+
+
+			window.onscroll = () => {
+				let val = window.scrollY
+				
+				stars.style.left = val + "px"
+				stars.style.bottom = val + "px"
+				moon.style.top = val * 0.75 + "px"
+				mountains_behind.style.top = val * 0.75 + "px"
+				text.style.marginRight = val * 0.75 + "px"
+				text2.style.marginLeft = val * 0.2 + 'px'
+				text1.style.marginLeft = val * 0.1 + 'px'
+				text3.style.marginLeft = val * 0.3 + 'px'
+				text4.style.marginLeft = val * 0.4 + 'px'
+				text5.style.marginLeft = val * 0.5 + 'px'
+			}
+
+
+
+				// let anim = document.querySelectorAll('.anim')
+				// if(anim.length > 0) {
+				// 	function animOnscroll(params) {
+				// 		for (let index = 0; index <  anim.length; index++) {
+				// 			const anim = array[index];
+				// 			const animHeight = anim.offsetHeight;
+				// 		}
+				// 	}
+				// }
+
+
+           
+        </script>
+	</body>
+</html>
+
+
